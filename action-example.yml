@@ -1,0 +1,25 @@
+# Example GitHub Actions workflow for AgentCheck
+# Copy into a Skill repo as .github/workflows/agentcheck.yml and adjust paths.
+
+name: agentcheck
+
+on:
+  pull_request:
+  push:
+    paths:
+      - "**/SKILL.md"
+      - "**/.claude/skills/**"
+      - "skills/**"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run AgentCheck
+        run: |
+          # Point this at the checked-out AgentCheck package or install from your fork.
+          python3 -m agentcheck check "${{ github.workspace }}/path/to/skill"
