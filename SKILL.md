@@ -9,7 +9,9 @@ Before committing or releasing a Claude/Cursor Skill folder, run a read-only che
 ## How to run
 
 ```bash
-cd experiments/agentcheck
+git clone https://github.com/Jiangki/agentcheck.git
+cd agentcheck
+pip install -e .
 python3 -m agentcheck check <path-to-skill-dir>
 python3 -m agentcheck check <path-to-skill-dir> --json
 python3 -m agentcheck check <path-to-skill-dir> --output report.md

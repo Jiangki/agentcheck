@@ -85,7 +85,3 @@ PYTHONPATH=. python3 -m unittest discover -s tests -v
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-## Origin
-
-Extracted from the [github-hot-tracker](https://github.com/Jiangki/github-hot-tracker) experiment pipeline (open-source-first idea → pre-release MVP).
