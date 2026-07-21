@@ -4,7 +4,7 @@ Read-only pre-publish checker for **Claude / Cursor Agent Skill** directories.
 
 Think of it as a small, deterministic **ESLint for Skills**: it scans a skill folder locally, reports stable rule IDs with file paths, and exits non-zero when error-level issues are found. It never uploads your files and never executes code inside the checked directory.
 
-> Status: open-source MVP for validation. Not a SaaS. Not a paid-demand claim.
+> Status: alpha. Local CLI only — not a hosted SaaS.
 
 ## Requirements
 
